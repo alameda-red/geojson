@@ -1,0 +1,32 @@
+{
+    "name": "alameda-red/geojson",
+    "description": "PHP implementation of RFC-7946",
+    "type": "library",
+    "keywords": ["geojson", "RFC-7946", "RFC", "7946"],
+    "authors" : [{
+        "name" : "Sebastian Kuhlmann",
+        "email" : "zebba@hotmail.de"
+    }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Alameda\\Geojson\\": "Geojson"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\Alameda\\Geojson\\": "tests/Geojson"
+        }
+    },
+    "require": {
+        "php": "~7.2",
+        "ext-json": "*",
+        "symfony/serializer": "~3.0|~4.0"
+    },
+    "require-dev": {
+        "phpspec/phpspec": "^4.2",
+        "phpunit/phpunit": "^7.5",
+        "leanphp/phpspec-code-coverage": "^4.2"
+    },
+    "license": "MIT"
+}

@@ -1,0 +1,22 @@
+extensions:
+    LeanPHP\PhpSpec\CodeCoverage\CodeCoverageExtension:
+        format:
+            - text
+            - xml
+            - html
+            - clover
+        output:
+            xml: coverage/xml
+            html: coverage/html
+            clover: coverage/clover
+        whitelist:
+            - Geojson
+        blacklist:
+            - Geojson\Exception
+            - Geojson\Serializer
+
+suites:
+    alameda:
+        namespace: Alameda\Geojson
+        psr4_prefix: Alameda\Geojson
+        src_path: "%paths.config%/Geojson"
